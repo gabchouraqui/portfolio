@@ -14,13 +14,13 @@
             height: auto; /* Maintain aspect ratio */
             margin: 0 auto 1em; /* Add some space between the image and content */
             border-radius: 50%; /* Make the image circular */
-            border: 2px solid #ec4c34; /* Add a white border */
+            border: 2px solid #ef5e4a; /* Add a white border */
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
         }
 
 /* Style for the footer */
 #footer {
-	background-color: #ec4c34 !important; /* Set the background color */
+	background-color: #ef5e4a !important; /* Set the background color */
 	padding: 2em 0; /* Add some padding for better spacing */
 }
 
@@ -35,65 +35,100 @@
 }
 
 .highlighted {
-    color: #ec4c34;
+    color: #ef5e4a;
 }
 
+ul.features {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Display list items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the items horizontally */
+}
 
+ul.features li.feature-item {
+  width: 600px; /* Increase the width to make them longer horizontally */
+  height: 200px; /* Decrease the height to make them shorter vertically */
+  margin: 20px; /* Add some spacing between squares */
+  padding: 20px; /* Add some padding inside each square */
+  text-align: center; /* Center the text within each square */
+  background-color: #f1f1f1; /* Set a default background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Different background colors for each square */
+ul.features li.feature-item:nth-child(1),
+ul.features li.feature-item:nth-child(3) {
+  background-color: #323741; /* Set background color for the first and third squares */
+}
+
+ul.features li.feature-item:nth-child(2),
+ul.features li.feature-item:nth-child(4) {
+  background-color: #323741; /* Set background color for the second and fourth squares */
+}
+#banner {
+    background-color: #323741;
+}
     </style>
 </head>
 <body class="landing is-preload">
     <!-- Banner -->
     <section id="banner">
-        <img src="images\Profile.png" alt="Gabriel Chouraqui">
+        <img src="images\\Profile.png" alt="Gabriel Chouraqui">
+        <br />
         <div class="inner">
             <h2>Gabriel Chouraqui</h2>
             <p>Data Analyst<br />
-                Driving brand success through strategic data insights <br />
-                <br /> Well served in SQL, Python, R <br /></p>
+            Driving brand success through strategic data insights
+            <br /><br />
+            Well served in SQL, Python, R
+            </p>
             <ul class="actions special">
-                <li><a href="#one" class="button primary">Portfolio</a></li>
+                <li><a href="#one" class="button primary scrolly">Portfolio</a></li>
             </ul>
         </div>
         <a href="#one" class="more scrolly">Learn More</a>
     </section>
 
-    <!-- One -->
-    <section id="one" class="wrapper style1 special">
-        <div class="inner">
-            <header class="major">
-                <h2>I'm a Data Analyst <br />
-                with profiencies in Techhnical and Computer skills</h2>
-                <p><span class="highlighted">My portfolio is composed by different types of projects of EDA, deep analysis, data visualizations and machine learning
-                using SQL, Python, R and other tools.</span></p>
-        </div>
-    </section>
+<!-- One -->
+<section id="one" class="wrapper style1 special">
+    <div class="inner">
+        <header class="major">
+            <h2>I'm a Data Analyst <br />
+                with proficiencies in technical and computer skills</h2>
+            <p><span class="highlighted">My portfolio consists of various types of projects including exploratory data analysis (EDA), deep analysis, data visualizations, machine learning, and deep learning.<br />
+                <br />These projects utilize SQL, Python, R, and other tools.</span></p>
+        </header>
+    </div>
+</section>
 
-    <!-- Three -->
-    <section id="three" class="wrapper style1 special">
-        <div class="inner">
-            <header class="major">
-                <h2>Projects</h2>
-            </header>
-            <ul class="features">
-                <li class="feature-item">
-                    <h3><a href="https://github.com/gabchouraqui/portfolio/tree/main/SQL">SQL Analysis</a></h3>
-                    <p>Doing a deep analysis using SQL to answer business value questions.</p>
-                </li>
-                <li class="feature-item">
-                    <h3><a href="https://github.com/gabchouraqui/portfolio/tree/main/R">R Analysis</a></h3>
-                    <p>EDA, NLP and deep analysis of datasets using R Studio to find some business insights and to create visualizations.</p>
-                </li>
-                <li class="feature-item">
-                    <h3><a href="https://github.com/gabchouraqui/portfolio/tree/main/PYTHON">Python Analysis</a></h3>
-                    <p>Doing EDA and deep analysis of different datasets to answer business questions.</p>
-                </li>
-                <li class="feature-item">
-                    <h3><a href="https://github.com/gabchouraqui/portfolio/tree/main/PREDICTIVE%20MODELS">Predictive Models</a></h3>
-                    <p>Using Python and R to create some predictions models using machine learning and deep learning.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+<!-- Three -->
+<section id="three" class="wrapper style1 special">
+    <div class="inner">
+        <header class="major">
+            <h2 style="border-bottom: 2px solid #ef5e4a; display: inline-block;">Projects</h2>
+        </header>
+
+        <ul class="features">
+            <li class="feature-item">
+                <h3 style="text-align: center;"><a href="https://github.com/gabchouraqui/portfolio.io/tree/main/SQL">SQL Analysis</a></h3>
+                <p style="text-align: center;">Doing a deep analysis using SQL to answer business value questions.</p>
+            </li>
+            <li class="feature-item">
+                <h3 style="text-align: center;"><a href="https://github.com/gabchouraqui/portfolio.io/tree/main/R">R Analysis</a></h3>
+                <p style="text-align: center;">EDA, NLP and deep analysis of datasets using R Studio to find some business insights and to create visualizations.</p>
+            </li>
+            <li class="feature-item">
+                <h3 style="text-align: center;"><a href="https://github.com/gabchouraqui/portfolio.io/tree/main/PYTHON">Python Analysis</a></h3>
+                <p style="text-align: center;">Doing EDA and deep analysis of different datasets to answer business questions.</p>
+            </li>
+            <li class="feature-item">
+                <h3 style="text-align: center;"><a href="https://github.com/gabchouraqui/portfolio.io/tree/main/PREDICTIVE%20MODELS">Predictive Models</a></h3>
+                <p style="text-align: center;">Using Python and R to create some predictions models using machine learning and deep learning.</p>
+            </li>
+        </ul>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer id="footer">
